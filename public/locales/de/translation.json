@@ -1,0 +1,20 @@
+{
+  "languageSelector": "Sprache auswählen",
+  "header1": "Entdeckungsgeschenk",
+  "header2": "Einloggen",
+  "description": "Melden Sie sich mit Ihren Daten an, die Sie bei der Registrierung eingegeben haben",
+  "label1": "Geben sie ihre E-Mailadresse ein",
+  "label2": "Geben Sie Ihr Passwort ein",
+  "passwordPlaceholder": "mindestens 8 Zeichen",
+  "logIn": "Einloggen",
+  "usePasswordCheckbox": "Verwenden Sie das Passwort, um sich bei meinem Konto anzumelden",
+  "forgetPassword": "Passwort vergessen?",
+  "signUpNow": "Jetzt registrieren",
+  "header3": "Schön dich wieder zu sehen",
+  "header4": "Willkommen zurück",
+  "alert1": "E-Mail und Passwort erforderlich...",
+  "alert2": "Email (erforderlich...",
+  "alert3": "Passwort erforderlich...",
+  "alert4": "Einloggen erfolgreich...\nLass uns gehen",
+  "alert5": "Fehler bei der Anmeldung...\nVersuch es noch einmal"
+}

@@ -1,0 +1,32 @@
+.sideNavBar {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  height: 80vh;
+  /* border: 1px solid #000; */
+}
+.hamburgerMenu {
+  cursor: pointer;
+  user-select: none;
+  display: none;
+}
+.navMenu {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 80vh;
+  /* border: 1px solid #000; */
+  background: #5f27cd;
+}
+.navMenu > li {
+  width: 100%;
+  /* border: 1px solid #000; */
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-links {
+  text-decoration: none;
+  color: #fff;
+}

@@ -1,0 +1,20 @@
+{
+  "languageSelector": "Select Language",
+  "header1": "Discovery Gift",
+  "header2": "Log in.",
+  "description": "Log in with your data that you entered during registration",
+  "label1": "Enter your email address",
+  "label2": "Enter your password",
+  "passwordPlaceholder": "atleast 8 characters",
+  "logIn": "Log in",
+  "usePasswordCheckbox": "Use password for logging into my account",
+  "forgetPassword": "Forget Password?",
+  "signUpNow": "Sign up now",
+  "header3": "Nice to see you again",
+  "header4": "Welcome back",
+  "alert1": "Email and password required...",
+  "alert2": "Email required...",
+  "alert3": "Password required...",
+  "alert4": "Login Success...\nLet's Go",
+  "alert5": "Login Failed...\nTry Again"
+}
