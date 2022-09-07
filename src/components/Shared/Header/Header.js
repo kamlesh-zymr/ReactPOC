@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router";
-import "../css/Header.css";
+import "../../../css/Header/Header.css";
 const Header = () => {
   const navigate = useNavigate();
   const logOut = () => {
@@ -8,7 +8,13 @@ const Header = () => {
   };
   return (
     <div className="headerComponent">
-      <h2>DashBoard</h2>
+      <h2
+        onClick={() => {
+          navigate("/home");
+        }}
+      >
+        DashBoard
+      </h2>
 
       <a href="/home">
         <i className="fa fa-gift"></i>

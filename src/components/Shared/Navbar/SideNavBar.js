@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavItems } from "./NavItems";
-import "../css/SideNavBar.css";
+import "../../../css/Navbar/SideNavBar.css";
 import { Link } from "react-router-dom";
 
 const SideNavBar = () => {

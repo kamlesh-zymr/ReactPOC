@@ -29,4 +29,9 @@
 .nav-links {
   text-decoration: none;
   color: #fff;
+  font-size: 1rem;
+}
+.nav-links:hover {
+  font-size: 1.4rem;
+  transition: 0.3s ease-out;
 }

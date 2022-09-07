@@ -7,9 +7,19 @@
   justify-content: space-between;
   padding: 0 1%;
 }
+.headerComponent > h2 {
+  cursor: pointer;
+  user-select: none;
+  color: #fff;
+}
+
 .headerComponent .fa {
   color: #fff;
   font-size: 2rem;
+}
+.fa:hover {
+  font-size: 2.5rem;
+  transition: 0.3s ease-out;
 }
 .logoutBtn {
   background: #fff;
@@ -24,4 +34,10 @@
   font-weight: 200;
   cursor: pointer;
   user-select: none;
+}
+.logoutBtn:hover {
+  background: #29066e;
+  color: #fff;
+  outline: none;
+  transition: 0.3s ease-out;
 }

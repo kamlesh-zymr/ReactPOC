@@ -1,12 +1,10 @@
 import React, { useTransition } from "react";
 import { useNavigate } from "react-router-dom";
-import "../css/Login.css";
+import "../../css/Login/Login.css";
 import { useTranslation } from "react-i18next";
-import i18n from "../i18n";
-import { toast } from "react-toastify";
+import i18n from "../../i18n";
+import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
-toast.configure();
 
 const Login = () => {
   const { t } = useTranslation();
@@ -15,26 +13,62 @@ const Login = () => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
-    // console.log(email);
-    // console.log(password);
 
     if (!email && !password) {
-      // swal({ title: "Alert", text: `${t("alert1")}`, icon: "warning" });
-      toast(`${t("alert1")}`);
-      // alert(`${t("alert1")}❗`);
+      toast.warn(`${t("alert1")} ❗`, {
+        position: "top-right",
+        autoClose: true,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
       console.log("Email and password required");
     } else if (!email) {
-      alert(`${t("alert2")}❗`);
+      toast.warn(`${t("alert2")} ❗`, {
+        position: "top-right",
+        autoClose: true,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
       console.log("Email required");
     } else if (!password) {
-      alert(` ${t("alert3")}❗`);
+      toast.warn(`${t("alert3")} ❗`, {
+        position: "top-right",
+        autoClose: true,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
       console.log("Password required");
     } else if (email === "name@example.com" && password === "12345678") {
-      alert(`${t("alert4")} 🚀`);
+      toast.success(`${t("alert4")} 🚀`, {
+        position: "top-right",
+        autoClose: true,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
       console.log("Login Success");
       navigate("/home");
     } else if (email !== "name@example.com" || password !== "12345678") {
-      alert(`${t("alert5")} ❌`);
+      toast.error(`${t("alert5")} ❌`, {
+        position: "top-right",
+        autoClose: true,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
       console.log("Login Failed");
     }
   };
@@ -48,8 +82,8 @@ const Login = () => {
       <div className="languageSelector">
         <p>{t("languageSelector")}</p>
         <select name="languageSelect" onChange={toggleLanguage}>
-          <option value="en">English</option>
-          <option value="de">German</option>
+          <option value="en">English 🇬🇧</option>
+          <option value="de">German 🇩🇪</option>
         </select>
       </div>
 
@@ -79,7 +113,16 @@ const Login = () => {
             <a
               href="#"
               onClick={() => {
-                alert("Forgot Password page coming 🔜");
+                // alert("Forgot Password page coming 🔜");
+                toast.info(`Forgot Password page coming 🔜`, {
+                  position: "top-right",
+                  autoClose: 2000,
+                  hideProgressBar: false,
+                  closeOnClick: true,
+                  pauseOnHover: true,
+                  draggable: true,
+                  progress: undefined,
+                });
               }}
             >
               {t("forgetPassword")}
@@ -93,6 +136,7 @@ const Login = () => {
           <h2>{t("header4")}</h2>
         </div>
       </div>
+      <ToastContainer />
     </>
   );
 };

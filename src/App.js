@@ -1,12 +1,11 @@
 import "./App.css";
-import Login from "./components/Login";
 import { Routes, Switch, Route } from "react-router-dom";
-import Home from "./components/Home";
 import { Suspense } from "react";
-import About from "./components/About";
-import Services from "./components/Services";
-import Contact from "./components/Contact";
-
+import Contact from "./components/Pages/Contact";
+import Services from "./components/Pages/Services";
+import About from "./components/Pages/About";
+import Home from "./components/Pages/Home";
+import Login from "./components/Login/Login";
 function App() {
   return (
     <div className="App">
